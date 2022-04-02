@@ -1,0 +1,55 @@
+ol{background-color: yellow;
+}
+
+.verde{color: green;
+}
+
+.maiusculo{text-transform: uppercase;
+
+}
+
+h1, h3{color: red;
+}
+
+.tamanho1{height: 40px;
+}
+
+.borda{ border: 1px solid black;
+}
+
+li{
+    font-size: 20px;
+}
+
+.negrito{font-weight: bold;
+}
+
+ul li.azul{color: blue;
+}
+
+.rosa{background-color: pink;
+}
+
+ul li a:hover{font-weight: bold;
+
+}
+
+#cor1:hover{color: orange;
+
+}
+
+#cor2:hover{color: green;
+    
+}
+
+#cor3:hover{color: black;
+    
+}
+
+#cor4:hover{color: yellow;
+    
+}
+
+#cor5:hover{color: greenyellow;
+    
+}
