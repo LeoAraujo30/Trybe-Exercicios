@@ -1,0 +1,57 @@
+<main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+
+  <script>
+
+    document.getElementById('elementoOndeVoceEsta')    
+    document.getElementById('elementoOndeVoceEsta').parentNode.style.color = 'red'
+    document.getElementById('primeiroFilhoDoFilho').innerText = 'Go Mufasa'
+    document.getElementById('pai').firstChild
+    document.getElementById('elementoOndeVoceEsta').previousSibling
+    document.getElementById('elementoOndeVoceEsta').nextSibling
+    document.getElementById('elementoOndeVoceEsta').nextElementSibling
+    document.getElementById('pai').lastElementChild.previousSibling
+
+    /////////////////////////////////////////////////////////////////////////
+
+    let section = document.createElement('section')
+    document.getElementById('pai').appendChild(section)
+
+    document.getElementById('elementoOndeVoceEsta').appendChild(section)
+
+    let primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho')
+    let filho = primeiroFilhoDoFilho.appendChild(section)
+
+    filho.id = 'filho'
+    let paiDoFIlho = document.getElementById('filho').parentElement
+    console.log(paiDoFIlho.parentElement.nextElementSibling)
+
+    ////////////////////////////////////////////////////////////////////////////
+
+    let paiDoPai = document.getElementById('paiDoPai')
+    let pai = document.getElementById('pai')
+    let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta')
+    let segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho')
+    let primeiroFilho = document.getElementById('primeiroFilho')
+    let terceiroFilho = document.getElementById('terceiroFilho')
+    let quartoEUltimoFilho = document.getElementById('quartoEUltimoFilho')
+
+    elementoOndeVoceEsta.removeChild(segundoEUltimoFilhoDoFilho)
+    pai.removeChild(primeiroFilho)
+    pai.removeChild(terceiroFilho)
+    pai.removeChild(quartoEUltimoFilho)
+
+
+    
+
+  </script>
